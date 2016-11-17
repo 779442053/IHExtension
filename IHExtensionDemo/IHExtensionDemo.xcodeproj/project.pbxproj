@@ -18,6 +18,7 @@
 		313CE1A61DDDB82C0066AC59 /* UIView+IHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CE1A51DDDB82C0066AC59 /* UIView+IHExtension.m */; };
 		3182D3CC1DDE0A30003D2652 /* UIControl+IHBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3182D3CB1DDE0A30003D2652 /* UIControl+IHBlock.m */; };
 		3182D3CE1DDE0ACA003D2652 /* Foundation+BMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3182D3CD1DDE0ACA003D2652 /* Foundation+BMLog.m */; };
+		3182D3D61DDE0DF0003D2652 /* UIColor+IHGradientChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 3182D3D51DDE0DF0003D2652 /* UIColor+IHGradientChange.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,9 @@
 		3182D3CA1DDE0A30003D2652 /* UIControl+IHBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+IHBlock.h"; sourceTree = "<group>"; };
 		3182D3CB1DDE0A30003D2652 /* UIControl+IHBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+IHBlock.m"; sourceTree = "<group>"; };
 		3182D3CD1DDE0ACA003D2652 /* Foundation+BMLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+BMLog.m"; sourceTree = "<group>"; };
+		3182D3CF1DDE0D7D003D2652 /* IHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHExtension.h; sourceTree = "<group>"; };
+		3182D3D41DDE0DF0003D2652 /* UIColor+IHGradientChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+IHGradientChange.h"; sourceTree = "<group>"; };
+		3182D3D51DDE0DF0003D2652 /* UIColor+IHGradientChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+IHGradientChange.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 		313CE1A01DDDB82C0066AC59 /* IHExtension */ = {
 			isa = PBXGroup;
 			children = (
+				3182D3CF1DDE0D7D003D2652 /* IHExtension.h */,
 				313CE1A11DDDB82C0066AC59 /* Foundation */,
 				313CE1A21DDDB82C0066AC59 /* UIKit */,
 			);
@@ -169,6 +174,7 @@
 		313CE1A21DDDB82C0066AC59 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3182D3D01DDE0DC0003D2652 /* UIColor */,
 				3182D3C91DDE0A1A003D2652 /* UIControl */,
 				313CE1A31DDDB82C0066AC59 /* UIView */,
 			);
@@ -191,6 +197,15 @@
 				3182D3CB1DDE0A30003D2652 /* UIControl+IHBlock.m */,
 			);
 			path = UIControl;
+			sourceTree = "<group>";
+		};
+		3182D3D01DDE0DC0003D2652 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				3182D3D41DDE0DF0003D2652 /* UIColor+IHGradientChange.h */,
+				3182D3D51DDE0DF0003D2652 /* UIColor+IHGradientChange.m */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3182D3CE1DDE0ACA003D2652 /* Foundation+BMLog.m in Sources */,
+				3182D3D61DDE0DF0003D2652 /* UIColor+IHGradientChange.m in Sources */,
 				313CE1721DDDB7A20066AC59 /* ViewController.m in Sources */,
 				313CE1A61DDDB82C0066AC59 /* UIView+IHExtension.m in Sources */,
 				3182D3CC1DDE0A30003D2652 /* UIControl+IHBlock.m in Sources */,

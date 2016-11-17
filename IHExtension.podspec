@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'IHExtension' 
-  s.version  = '0.0.2'
+  s.version  = '0.0.3'
   s.license  = 'MIT'
   s.summary  = 'This My IHExtension'  
   s.homepage = 'https://github.com/asiosldh/IHExtension' 
