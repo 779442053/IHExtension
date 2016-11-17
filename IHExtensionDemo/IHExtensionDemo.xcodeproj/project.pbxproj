@@ -16,6 +16,8 @@
 		313CE1851DDDB7A20066AC59 /* IHExtensionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CE1841DDDB7A20066AC59 /* IHExtensionDemoTests.m */; };
 		313CE1901DDDB7A20066AC59 /* IHExtensionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CE18F1DDDB7A20066AC59 /* IHExtensionDemoUITests.m */; };
 		313CE1A61DDDB82C0066AC59 /* UIView+IHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CE1A51DDDB82C0066AC59 /* UIView+IHExtension.m */; };
+		3182D3CC1DDE0A30003D2652 /* UIControl+IHBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3182D3CB1DDE0A30003D2652 /* UIControl+IHBlock.m */; };
+		3182D3CE1DDE0ACA003D2652 /* Foundation+BMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3182D3CD1DDE0ACA003D2652 /* Foundation+BMLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		313CE1911DDDB7A20066AC59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		313CE1A41DDDB82C0066AC59 /* UIView+IHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IHExtension.h"; sourceTree = "<group>"; };
 		313CE1A51DDDB82C0066AC59 /* UIView+IHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IHExtension.m"; sourceTree = "<group>"; };
+		3182D3CA1DDE0A30003D2652 /* UIControl+IHBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+IHBlock.h"; sourceTree = "<group>"; };
+		3182D3CB1DDE0A30003D2652 /* UIControl+IHBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+IHBlock.m"; sourceTree = "<group>"; };
+		3182D3CD1DDE0ACA003D2652 /* Foundation+BMLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+BMLog.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +161,7 @@
 		313CE1A11DDDB82C0066AC59 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				3182D3CD1DDE0ACA003D2652 /* Foundation+BMLog.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -163,6 +169,7 @@
 		313CE1A21DDDB82C0066AC59 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3182D3C91DDE0A1A003D2652 /* UIControl */,
 				313CE1A31DDDB82C0066AC59 /* UIView */,
 			);
 			path = UIKit;
@@ -175,6 +182,15 @@
 				313CE1A51DDDB82C0066AC59 /* UIView+IHExtension.m */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		3182D3C91DDE0A1A003D2652 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				3182D3CA1DDE0A30003D2652 /* UIControl+IHBlock.h */,
+				3182D3CB1DDE0A30003D2652 /* UIControl+IHBlock.m */,
+			);
+			path = UIControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,8 +329,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3182D3CE1DDE0ACA003D2652 /* Foundation+BMLog.m in Sources */,
 				313CE1721DDDB7A20066AC59 /* ViewController.m in Sources */,
 				313CE1A61DDDB82C0066AC59 /* UIView+IHExtension.m in Sources */,
+				3182D3CC1DDE0A30003D2652 /* UIControl+IHBlock.m in Sources */,
 				313CE16F1DDDB7A20066AC59 /* AppDelegate.m in Sources */,
 				313CE16C1DDDB7A20066AC59 /* main.m in Sources */,
 			);
@@ -554,6 +572,7 @@
 				313CE1961DDDB7A20066AC59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		313CE1971DDDB7A20066AC59 /* Build configuration list for PBXNativeTarget "IHExtensionDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +581,7 @@
 				313CE1991DDDB7A20066AC59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		313CE19A1DDDB7A20066AC59 /* Build configuration list for PBXNativeTarget "IHExtensionDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +590,7 @@
 				313CE19C1DDDB7A20066AC59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
