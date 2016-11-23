@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
   s.source_files = 'IHExtensionDemo/IHExtension/**/*.{h,m}'
   s.framework = 'UIKit'
   s.requires_arc = true
+  s.dependency "BlocksKit", "~> 2.2.5"
 end

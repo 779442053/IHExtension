@@ -19,6 +19,7 @@
 		3182D3CC1DDE0A30003D2652 /* UIControl+IHBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3182D3CB1DDE0A30003D2652 /* UIControl+IHBlock.m */; };
 		3182D3CE1DDE0ACA003D2652 /* Foundation+BMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3182D3CD1DDE0ACA003D2652 /* Foundation+BMLog.m */; };
 		3182D3D61DDE0DF0003D2652 /* UIColor+IHGradientChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 3182D3D51DDE0DF0003D2652 /* UIColor+IHGradientChange.m */; };
+		32827A7B1DE5373600160721 /* IHAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32827A7A1DE5373600160721 /* IHAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		3182D3CF1DDE0D7D003D2652 /* IHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHExtension.h; sourceTree = "<group>"; };
 		3182D3D41DDE0DF0003D2652 /* UIColor+IHGradientChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+IHGradientChange.h"; sourceTree = "<group>"; };
 		3182D3D51DDE0DF0003D2652 /* UIColor+IHGradientChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+IHGradientChange.m"; sourceTree = "<group>"; };
+		32827A791DE5373600160721 /* IHAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHAlertView.h; sourceTree = "<group>"; };
+		32827A7A1DE5373600160721 /* IHAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,7 @@
 		313CE1A21DDDB82C0066AC59 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				32827A781DE5373600160721 /* IHAlertView */,
 				3182D3D01DDE0DC0003D2652 /* UIColor */,
 				3182D3C91DDE0A1A003D2652 /* UIControl */,
 				313CE1A31DDDB82C0066AC59 /* UIView */,
@@ -206,6 +210,15 @@
 				3182D3D51DDE0DF0003D2652 /* UIColor+IHGradientChange.m */,
 			);
 			path = UIColor;
+			sourceTree = "<group>";
+		};
+		32827A781DE5373600160721 /* IHAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				32827A791DE5373600160721 /* IHAlertView.h */,
+				32827A7A1DE5373600160721 /* IHAlertView.m */,
+			);
+			path = IHAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +361,7 @@
 				3182D3D61DDE0DF0003D2652 /* UIColor+IHGradientChange.m in Sources */,
 				313CE1721DDDB7A20066AC59 /* ViewController.m in Sources */,
 				313CE1A61DDDB82C0066AC59 /* UIView+IHExtension.m in Sources */,
+				32827A7B1DE5373600160721 /* IHAlertView.m in Sources */,
 				3182D3CC1DDE0A30003D2652 /* UIControl+IHBlock.m in Sources */,
 				313CE16F1DDDB7A20066AC59 /* AppDelegate.m in Sources */,
 				313CE16C1DDDB7A20066AC59 /* main.m in Sources */,
