@@ -20,6 +20,7 @@
 		3182D3CE1DDE0ACA003D2652 /* Foundation+BMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3182D3CD1DDE0ACA003D2652 /* Foundation+BMLog.m */; };
 		3182D3D61DDE0DF0003D2652 /* UIColor+IHGradientChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 3182D3D51DDE0DF0003D2652 /* UIColor+IHGradientChange.m */; };
 		32827A7B1DE5373600160721 /* IHAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32827A7A1DE5373600160721 /* IHAlertView.m */; };
+		A50D46AA3AC66317F130B087 /* libPods-IHExtensionDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 525F6B879A30E11C81C75B87 /* libPods-IHExtensionDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,11 @@
 		3182D3D51DDE0DF0003D2652 /* UIColor+IHGradientChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+IHGradientChange.m"; sourceTree = "<group>"; };
 		32827A791DE5373600160721 /* IHAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHAlertView.h; sourceTree = "<group>"; };
 		32827A7A1DE5373600160721 /* IHAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHAlertView.m; sourceTree = "<group>"; };
+		4AEB5970B3AD3DF14B9020CE /* Pods-IHExtensionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IHExtensionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IHExtensionDemo/Pods-IHExtensionDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		525F6B879A30E11C81C75B87 /* libPods-IHExtensionDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IHExtensionDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E55DEEBA1A775B7A165954 /* Pods-IHExtensionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IHExtensionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-IHExtensionDemo/Pods-IHExtensionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B246A7F93416CEEF73E1C5ED /* libPods-IHExtensionDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IHExtensionDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE27BB3C5A5BEE93B08F665 /* libPods-IHExtensionDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IHExtensionDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50D46AA3AC66317F130B087 /* libPods-IHExtensionDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +108,8 @@
 				313CE1831DDDB7A20066AC59 /* IHExtensionDemoTests */,
 				313CE18E1DDDB7A20066AC59 /* IHExtensionDemoUITests */,
 				313CE1681DDDB7A20066AC59 /* Products */,
+				ADB3C1A8A99955C13D6C4DB2 /* Pods */,
+				99D852B7B9FD564F74DA4CF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,6 +230,25 @@
 			path = IHAlertView;
 			sourceTree = "<group>";
 		};
+		99D852B7B9FD564F74DA4CF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				525F6B879A30E11C81C75B87 /* libPods-IHExtensionDemo.a */,
+				B246A7F93416CEEF73E1C5ED /* libPods-IHExtensionDemoTests.a */,
+				CAE27BB3C5A5BEE93B08F665 /* libPods-IHExtensionDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADB3C1A8A99955C13D6C4DB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AEB5970B3AD3DF14B9020CE /* Pods-IHExtensionDemo.debug.xcconfig */,
+				76E55DEEBA1A775B7A165954 /* Pods-IHExtensionDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 313CE1941DDDB7A20066AC59 /* Build configuration list for PBXNativeTarget "IHExtensionDemo" */;
 			buildPhases = (
+				2A3D456731F80EE3FC22686C /* [CP] Check Pods Manifest.lock */,
 				313CE1631DDDB7A20066AC59 /* Sources */,
 				313CE1641DDDB7A20066AC59 /* Frameworks */,
 				313CE1651DDDB7A20066AC59 /* Resources */,
+				B527C9EEAE7F0F9F0BDA3617 /* [CP] Embed Pods Frameworks */,
+				1148017B5D24613F65A7EEC2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -351,6 +382,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1148017B5D24613F65A7EEC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IHExtensionDemo/Pods-IHExtensionDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A3D456731F80EE3FC22686C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B527C9EEAE7F0F9F0BDA3617 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IHExtensionDemo/Pods-IHExtensionDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		313CE1631DDDB7A20066AC59 /* Sources */ = {
@@ -511,10 +590,12 @@
 		};
 		313CE1951DDDB7A20066AC59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AEB5970B3AD3DF14B9020CE /* Pods-IHExtensionDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8RB35RM424;
 				INFOPLIST_FILE = IHExtensionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.IHExtensionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -523,10 +604,12 @@
 		};
 		313CE1961DDDB7A20066AC59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76E55DEEBA1A775B7A165954 /* Pods-IHExtensionDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8RB35RM424;
 				INFOPLIST_FILE = IHExtensionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.IHExtensionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

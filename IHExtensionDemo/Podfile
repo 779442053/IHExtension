@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'IHExtensionDemo' do
+
+pod 'BlocksKit', '~> 2.2.5'
+pod 'YYCategories', '~> 1.0.4'
+pod 'FlatUIKit', '~> 1.6.2'
+pod 'JKCategories', '~> 1.4'
+pod 'YYKit', '~> 1.0.9'
+
+end
